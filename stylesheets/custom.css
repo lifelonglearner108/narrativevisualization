@@ -1,0 +1,81 @@
+body {
+  background: white;
+}
+rect {
+  stroke-width: 1px;
+  opacity: 0.7;
+  stroke: white;
+}
+rect:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.tooltip {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #004c99;
+  padding: 10px;
+  border: 1px solid #808080;
+  box-shadow: 0 0px 10px black;
+}
+
+.tooltip1 {
+  color: #666565;
+  font-size: 12.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1px;
+  word-spacing: 3px;
+}
+
+.tooltip2 {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1px;
+  word-spacing: 3px;
+}
+
+mark.red {
+  color: #b91c00;
+  background: none;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+mark.green {
+  color: #106904;
+  background: none;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+mark.teal {
+  color: #0d868a;
+  background: none;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.page-header1 {
+  color: #fff;
+  text-align: center;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+}
+
+path {
+  stroke: white;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active {
+  background-color: #666;
+  color: white;
+}
+
+mark.a {
+  text-align: center;
+}

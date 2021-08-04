@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Narrative visualization by anupamojha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/normalize.css"
+      media="screen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:200,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/stylesheet.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/github-light.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/custom.css"
+      media="screen"
+    />
+  </head>
+
+  <body onload="initialize()">
+    <section class="page-header1">
+      <h1 class="project-name">Indian Govt. Engineering Jobs Visualization</h1>
+    </section>
+    <div class="w3-bar w3-blue-grey">
+      <a
+        href="#"
+        onclick="navigate('back');"
+        class="w3-bar-item w3-button"
+        style="width: 27%;"
+        ><--</a
+      >
+      <a
+        href="#"
+        onclick="navigate('dashboard');"
+        class="w3-bar-item w3-button"
+        style="width: 15%;"
+        >Dashboard</a
+      >
+      <a
+        href="#"
+        onclick="navigate('category');"
+        class="w3-bar-item w3-button"
+        style="width: 15%;"
+        >Categorization</a
+      >
+      <a
+        href="#"
+        onclick="navigate('categoryDetail');"
+        class="w3-bar-item w3-button"
+        style="width: 15%;"
+        >Category Details</a
+      >
+      <a
+        href="#"
+        onclick="navigate('next');"
+        class="w3-bar-item w3-button"
+        style="width: 28%;"
+        >--></a
+      >
+    </div>
+    <section class="main-content">
+      <h3>
+        <span aria-hidden="true" class="octicon octicon-link"></span>Jobs
+        Summary
+      </h3>
+      <div class="tooltip1">
+        Below is the dashboard of jobs advertized by various entities of Govt of India for new and/or experienced engineers.
+		The below dataset provides information into the <mark class="teal">job titles</mark> and
+        <mark class="teal">the count of jobs</mark> available for the respective job titles.
+        We can see that the Fixed Term Engineer jobs constitute a significant percentage of the total number of jobs from the below charts.
+	  </br></br>
+	  	<mark class="green">Bar Chart</mark> shows top 20 <mark class="teal">Job Title</mark> by
+		 <mark class="teal">Count of Jobs</mark> available<br />
+		 <mark class="green">Donut Chart</mark> shows <mark class="teal">Job Title</mark> by
+		 <mark class="teal">Count of Jobs</mark> in <mark class="red">percentages</mark>
+      </div>
+
+      <div>
+        <svg width="600" height="600"></svg>
+      </div>
+
+      <footer class="site-footer">
+		<div class="tooltip2">
+		Please click <mark class="teal">Previous[<--]</mark> or <mark class="teal">Next[-->]</mark> buttons on the menu bar to navigate and view the charts by category and the details pertaining to respective category.
+		</br>
+		<span class="site-footer-credits">
+		You may click to interactively view corresponsing data on the charts.
+		</span>
+		</div>
+      </footer>
+    </section>
+
+    <script src = "pg1.js">
+      
+    </script>
+  </body>
+</html>

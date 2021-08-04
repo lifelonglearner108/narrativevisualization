@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Narrative visualization by anupamojha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/normalize.css"
+      media="screen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:200,500"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/stylesheet.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/github-light.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/custom.css"
+      media="screen"
+    />
+  </head>
+
+  <body onload="init()">
+    <section class="page-header1">
+      <h1 class="project-name">Jobs Visualization</h1>
+    </section>
+    <div class="w3-bar w3-teal">
+      <a
+        href="#"
+        onclick="navigate('previous');"
+        class="w3-bar-item w3-button"
+        style="width: 27%;"
+        ><<</a
+      >
+      <a
+        href="#"
+        onclick="navigate('summary');"
+        class="w3-bar-item w3-button"
+        style="width: 15%;"
+        >Summary</a
+      >
+      <a
+        href="#"
+        onclick="navigate('jobsby');"
+        class="w3-bar-item w3-button"
+        style="width: 15%;"
+        >Jobs By</a
+      >
+      <a
+        href="#"
+        onclick="navigate('jobsdetail');"
+        class="w3-bar-item w3-button w3-green"
+        style="width: 15%;"
+        >Jobs Details</a
+      >
+      <a
+        href="#"
+        onclick="navigate('next');"
+        class="w3-bar-item w3-button"
+        style="width: 28%;"
+        >>></a
+      >
+    </div>
+    <section class="main-content">
+      <h3>
+        <span aria-hidden="true" class="octicon octicon-link"></span>Jobs by Company Names
+      </h3>
+      <div class="tooltip1">
+        This chart shows jobs by Company names. By <mark class="teal">default</mark> shows 
+        <mark class="teal">All Jobs</mark> by employers belonging to different <mark class="teal">sectors</mark>.
+        Chart is in descending order with the Company Names having most number of jobs showing first.
+        Many companies are there belonging to different company types and hence pagination provided.</br>
+        Any selection of an <mark class="teal">Employer Type</mark> and <mark class="teal">value</mark> from the previous page will set the chart accordingly.</br>
+        Chart can be viewed interactively by selecting/deselecting the <mark class="teal">Job Titles</mark> on the top right corner.
+	      </br>
+      </p>
+        <div id="selectchoice">
+          <div id="selectdiv"></div>
+        </div>      
+        <div> 
+          <label id="chartlabel" for="chartlabel"></label>
+        </div>
+        <div id="pagination">
+          <input type="button" id="first" onclick="firstPage()" value="first" />
+          <input type="button" id="next" onclick="nextPage()" value="next" />
+          <input type="button" id="previous" onclick="previousPage()" value="previous" />
+          <input type="button" id="last" onclick="lastPage()" value="last" />
+          <label id="paginationlabel" for="paginationlabel"></label>
+        </div>        
+        <svg id="chart" width="960" height="500"></svg>        
+      </div>
+
+      <footer class="site-footer">
+        <div class="tooltip2">
+        Please click <mark class="teal">Previous[<<]</mark> or <mark class="teal">Next[>>]</mark> buttons on the menu bar to navigate and view author set charts.
+        </br>
+        <span class="site-footer-credits">
+        Alternatively you may click to interactively view corresponsing data on the charts.
+        </span>
+        </div>
+      </footer>
+    </section>
+
+    <script src= "pg3.js">
+      
+    </script>
+  </body>
+</html>
