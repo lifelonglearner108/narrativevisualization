@@ -78,14 +78,14 @@
         //set page number
         document.getElementById("paginationlabel").innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
         "Total Companies: <b>" + list.length + "</b>" + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + 
-          "Current Page: <b>" + currentPage + "</b>" + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + "Total Pages:<b>" + numOfPgs + "</b>";    
+          "Current Page: <b>" + currPage + "</b>" + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + "Total Pages:<b>" + numOfPgs + "</b>";    
       } 
       
       function check() {
-        document.getElementById("next").disabled = currentPage == numOfPgs ? true : false;
-        document.getElementById("previous").disabled = currentPage == 1 ? true : false;
-        document.getElementById("first").disabled = currentPage == 1 ? true : false;
-        document.getElementById("last").disabled = currentPage == numOfPgs ? true : false;
+        document.getElementById("next").disabled = currPage == numOfPgs ? true : false;
+        document.getElementById("previous").disabled = currPage == 1 ? true : false;
+        document.getElementById("first").disabled = currPage == 1 ? true : false;
+        document.getElementById("last").disabled = currPage == numOfPgs ? true : false;
       }      
 
       // All chart variables

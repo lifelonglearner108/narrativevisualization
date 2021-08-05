@@ -37,45 +37,45 @@
     />
   </head>
 
-  <body onload="init()">
+  <body onload="initialize()">
     <section class="page-header1">
-      <h1 class="project-name">Jobs Visualization</h1>
+      <h1 class="project-name">Indian Govt. Engineering Jobs Visualization</h1>
     </section>
-    <div class="w3-bar w3-teal">
-      <a
+    <div class="w3-bar w3-blue-grey">
+       <a
         href="#"
-        onclick="navigate('previous');"
+        onclick="navigate('back');"
         class="w3-bar-item w3-button"
         style="width: 27%;"
-        ><<</a
+        ><--</a
       >
       <a
         href="#"
-        onclick="navigate('summary');"
+        onclick="navigate('dashboard');"
         class="w3-bar-item w3-button"
         style="width: 15%;"
-        >Summary</a
+        >Dashboard</a
       >
       <a
         href="#"
-        onclick="navigate('jobsby');"
+        onclick="navigate('category');"
         class="w3-bar-item w3-button"
         style="width: 15%;"
-        >Jobs By</a
+        >Categorization</a
       >
       <a
         href="#"
-        onclick="navigate('jobsdetail');"
-        class="w3-bar-item w3-button w3-green"
+        onclick="navigate('categoryDetail');"
+        class="w3-bar-item w3-button"
         style="width: 15%;"
-        >Jobs Details</a
+        >Category Details</a
       >
       <a
         href="#"
         onclick="navigate('next');"
         class="w3-bar-item w3-button"
         style="width: 28%;"
-        >>></a
+        >--></a
       >
     </div>
     <section class="main-content">
@@ -83,10 +83,10 @@
         <span aria-hidden="true" class="octicon octicon-link"></span>Jobs by Company Names
       </h3>
       <div class="tooltip1">
-        This chart shows jobs by Company names. By <mark class="teal">default</mark> shows 
-        <mark class="teal">All Jobs</mark> by employers belonging to different <mark class="teal">sectors</mark>.
-        Chart is in descending order with the Company Names having most number of jobs showing first.
-        Many companies are there belonging to different company types and hence pagination provided.</br>
+        This chart shows open positions by Organization names. By <mark class="teal">default</mark> shows 
+        <mark class="teal">All open positions</mark> by employers recruiting via various <mark class="teal">channels</mark>.
+        Chart is in descending order with the Company Names having most number of positions showing first.
+        Pagination is provided to navigate different companies of various types.</br>
         Any selection of an <mark class="teal">Employer Type</mark> and <mark class="teal">value</mark> from the previous page will set the chart accordingly.</br>
         Chart can be viewed interactively by selecting/deselecting the <mark class="teal">Job Titles</mark> on the top right corner.
 	      </br>
@@ -109,7 +109,7 @@
 
       <footer class="site-footer">
         <div class="tooltip2">
-        Please click <mark class="teal">Previous[<<]</mark> or <mark class="teal">Next[>>]</mark> buttons on the menu bar to navigate and view author set charts.
+        Please click <mark class="teal">Previous[<--]</mark> or <mark class="teal">Next[-->]</mark> buttons on the menu bar to navigate.
         </br>
         <span class="site-footer-credits">
         Alternatively you may click to interactively view corresponsing data on the charts.

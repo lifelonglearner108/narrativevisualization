@@ -129,7 +129,7 @@
         // ***** adding by select ******
         var bylabel = document.createElement("label");
         bylabel.innerHTML =
-          "Employer Type : ";
+          "Drill down type : ";
           bylabel.htmlFor = "by"; 
 
         var selectby = document.createElement("select");
@@ -357,7 +357,7 @@
           })
           .text((d) => d.value)
           .on("mouseover", (d) => {
-            var selobject = jobsData.find(a => a.key == origin);
+            var selobject = topJobsData.find(a => a.key == origin);
             var textval = selobject.key + " : " + selobject.value;
             textval = textval + "</br>" + d.key + " : " + d.value.toFixed(0) + ' Jobs';
             tooltip.html(textval);
